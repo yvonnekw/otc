@@ -1,0 +1,9 @@
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/dataBase?user=youruser&password=yourpassword
+spring.datasource.driver-class-name= org.postgresql.Driver
+spring.jpa.show-sql= true
+spring.datasource.dbcp2.test-while-idle= true
+spring.r2dbc.pool.validation-query= select 1
+spring.jpa.hibernate.naming.implicit-strategy= org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+spring.jpa.hibernate.naming.physical-strategy= org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+spring.jpa.properties.hibernate.hbm2ddl.auto = validate

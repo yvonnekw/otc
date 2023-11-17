@@ -1,0 +1,19 @@
+package com.opticaltelephonecompany.otc.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+
+/**
+ * Thrown if there is a call for certain user, but the user does not exist.<br>
+ * For example if you try to get a certain user's data using {@link com.opticaltelephonecompany.otc.AdminService}
+ * and then you would use 'User getUserByUuid(UUID)'. If the user didn't exist, then the function should throw {@link NoSuchUserException}.<br><br>
+ *
+ * @see org.springframework.web.server.ResponseStatusException
+ */
+
+public class NoSuchUserException extends ResponseStatusException {
+       public NoSuchUserException() {
+        super(HttpStatus.NOT_FOUND, "NO_SUCH_USER_EXCEPTION");
+    }
+    
+}
